@@ -8,15 +8,11 @@ jobs:
   sonarcloudscan:
     name: sonarcloudscan
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        java-version: [ 8.0.192, 8 ]
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK ${{ matrix.java-version }}
+      - name: Set up JDK 
         uses: actions/setup-java@v2
         with:
-          java-version: ${{ matrix.java-version }}
           distribution: zulu
           cache: maven
       - name: Build and analyze
@@ -24,7 +20,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -X verify org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar \
           -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=b0b73c9f4d84554c2f467b9819fefe870632911d 
+          -Dsonar.token=b0b73c9f4d84554c2f467b9819fefe870632911d 
           -Dsonar.organization=reachrajanig \
           -Dsonar.projectKey=reachrajanig_hellomaven
 

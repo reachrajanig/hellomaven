@@ -13,6 +13,7 @@ jobs:
       - name: Set up JDK 
         uses: actions/setup-java@v2
         with:
+          java-version: 22.0.2 
           distribution: zulu
           cache: maven
       - name: Build and analyze

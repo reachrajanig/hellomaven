@@ -24,6 +24,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar \
           -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.login=b0b73c9f4d84554c2f467b9819fefe870632911d 
           -Dsonar.organization=reachrajanig \
           -Dsonar.projectKey=reachrajanig_hellomaven
 

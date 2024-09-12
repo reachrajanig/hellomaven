@@ -23,5 +23,5 @@ jobs:
               -Dsonar.token=$SONAR_TOKEN \
               -Dsonar.host.url=https://sonarcloud.io \
               -Dsonar.organization=reachrajanig \
-              -Dsonar.projectKey=reachrajanig_hellomaven
+              -Dsonar.projectKey=reachrajanig_hellomaven2
 

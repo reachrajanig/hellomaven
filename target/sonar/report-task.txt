@@ -1,7 +1,7 @@
 organization=reachrajanig
-projectKey=reachrajanig_hellomaven
+projectKey=reachrajanig_hellomaven1
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.56570
-dashboardUrl=https://sonarcloud.io/dashboard?id=reachrajanig_hellomaven
-ceTaskId=AZHnNzQlKEJVOPYI6CQo
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZHnNzQlKEJVOPYI6CQo
+dashboardUrl=https://sonarcloud.io/dashboard?id=reachrajanig_hellomaven1
+ceTaskId=AZHnVWES2I9bY_a9CSza
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZHnVWES2I9bY_a9CSza

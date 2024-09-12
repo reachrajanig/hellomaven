@@ -19,9 +19,9 @@ jobs:
       - name: Build and analyze
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -X verify org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.token=b0b73c9f4d84554c2f467b9819fefe870632911d 
-          -Dsonar.organization=reachrajanig \
-          -Dsonar.projectKey=reachrajanig_hellomaven
+        run: mvn clean verify sonar:sonar \
+              -Dsonar.token=b0b73c9f4d84554c2f467b9819fefe870632911d \
+              -Dsonar.host.url=https://sonarcloud.io \
+              -Dsonar.organization=reachrajanig \
+              -Dsonar.projectKey=reachrajanig_hellomaven
 

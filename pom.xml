@@ -16,7 +16,7 @@
     <maven.compiler.release>17</maven.compiler.release>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.organization>reachrajanig</sonar.organization>
-    <sonar.projectKey>reachrajanig_hellomaven2</sonar.projectKey>
+    <sonar.projectKey>reachrajanig_hellomaven</sonar.projectKey>
   </properties>
 
   <dependencyManagement>
@@ -104,7 +104,7 @@
           <configuration>
               <sonar.host.url>https://sonarcloud.io</sonar.host.url>
               <sonar.organization>reachrajanig</sonar.organization>
-              <sonar.projectKey>reachrajanig_hellomaven2</sonar.projectKey>
+              <sonar.projectKey>reachrajanig_hellomaven</sonar.projectKey>
               <sonar.login>${env.SONAR_TOKEN}</sonar.login>
           </configuration>
         </plugin>

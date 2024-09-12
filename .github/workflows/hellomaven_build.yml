@@ -23,5 +23,5 @@ jobs:
         run: mvn -e clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
               -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
               -Dsonar.organization=reachrajanig \
-              -Dsonar.projectKey=reachrajanig_hellomaven2
+              -Dsonar.projectKey=reachrajanig_hellomaven
 

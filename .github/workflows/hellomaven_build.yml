@@ -20,9 +20,6 @@ jobs:
       - name: Build and analyze
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -e verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-              -Dsonar.projectKey=reachrajanig_hellomaven \
-              -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
-              -Dsonar.organization=reachrajanig
+        run: mvn -e verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=reachrajanig_hellomaven -Dsonar.token=${{ secrets.SONAR_TOKEN }} -Dsonar.organization=reachrajanig
               
 

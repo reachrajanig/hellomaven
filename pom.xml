@@ -91,13 +91,18 @@
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
           <version>3.9.1.2184</version>
-        </plugin>
-
-        <plugin>
-          <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.13.1</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>sonar</goal>
+              </goals>
+            </execution>
+          </executions>
           <configuration>
-            <goalPrefix>sonar-maven-plugin</goalPrefix>
+              <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+              <sonar.organization>reachrajanig</sonar.organization>
+              <sonar.projectKey>reachrajanig_hellomaven2</sonar.projectKey>
+              <sonar.login>${env.SONAR_TOKEN}</sonar.login>
           </configuration>
         </plugin>
       </plugins>

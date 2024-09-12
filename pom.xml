@@ -14,7 +14,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
-    <sonar.token>b0b73c9f4d84554c2f467b9819fefe870632911d</sonar.token>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.organization>reachrajanig</sonar.organization>
     <sonar.projectKey>reachrajanig_hellomaven</sonar.projectKey>
